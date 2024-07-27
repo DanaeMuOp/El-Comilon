@@ -1,0 +1,116 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% load custom_filters %}
+
+{% block content %}
+<br>
+<h1 class="text-center titulos">¡Los mejores platos para ti!</h1>
+  <!-- Contenido principal de la pagina CARRUSEL -->
+  <main role="main" class="p-0 m-0">
+    <section class="p-0 m-0">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{% static 'core/img/comida-rapida1.jpg' %}" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'core/img/comida-rapida1.jpg' %}" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'core/img/comida-rapida1.jpg' %}" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'core/img/comida-rapida1.jpg' %}" class="d-block w-100" alt="">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Antes</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Después</span>
+            </button>
+        </div>
+    </section>
+  </main>
+  <br><br>
+
+  <!-- FORMULARIO DE BUSQUEDA -->
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <h1 class="text-center" style="color: red; font-size: 30px; font-family: 'Georgia', serif; font-weight: bold;">Ingresa tu ubicación para ver los platos que hay cerca tuyo</h1>
+            <form method="post" action="{% url 'index' %}" class="d-flex justify-content-center align-items-center" role="search">
+                {% csrf_token %}
+                
+                <span class="input-group-text buscar_domicilio" style="font-size: 1.5rem;">
+                    <svg xmlns="http://www.w3.org/2000/svg" style="color: black;" width="45" height="45" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                    </svg>
+                </span>
+                
+                <input class="form-control me-2 buscar_domicilio" style="font-size: 1.2rem; width: 100%; max-width: 1200px; height: 60px;" type="search" placeholder="Ingrese su ubicación o punto de referencia" aria-label="Search" id="buscar" name="buscar">
+                
+                <button class="btn btn-outline-success boton_buscar_anonimo" style="color: black; font-size: 1.5rem;" type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" style="color: black;" width="45" height="45" fill="currentColor" class="bi bi-search-heart" viewBox="0 0 16 16">
+                        <path d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018"/>
+                        <path d="M13 6.5a6.47 6.47 0 0 1-1.258 3.844q.06.044.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+  </div>
+  <br><br>
+  {% if productos %}
+  <div class="container-fluid box-shadow">
+    <div class="row">
+      {% for producto in productos %}
+        <div class="card col-sm-12 col-md-6 col-lg-3 col-xl-2 border-1 m-2 pt-3 pb-4 pt-2 mb-4 index_foto_fondo" style="width: 22.2rem;">
+        <a href="{% url 'ficha' producto.id %}" class="link-bloque" style="border-color: #e3d400; text-decoration: none; display: flex; flex-direction: column;">
+            
+            <img src="/media/{{ producto.imagen }}" class="card-img-top index_prod_1 center-image" alt="Foto de un videojuego"/>
+            <br>
+            <h2 class="card-title titulos" style="font-size:30px; text-align: center;">{{ producto.nombre }}</h2>
+            <br>
+            <span class="index_precio" style="color: black;">{{ producto.html_precio|safe }}</span>
+            <br>
+            <span class="titulos_2">{{ producto.descripcion }}</span>
+            <br>
+            <br>
+            <div style="">
+                <a href="{% url 'ficha' producto.id %}" class="btn btn-primary boton_buscar_anonimo_2">Ver más detalles</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16" style="color: #fff; margin-left: 100px;">
+                  <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                </svg>
+            </div>
+        </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Selecciona todos los íconos de corazón
+      const hearts = document.querySelectorAll('.bi-heart-fill');
+  
+      hearts.forEach(heart => {
+        // Genera un número aleatorio entre 0 y 1
+        const randomNum = Math.random();
+        // Asigna la clase 'red-heart' con una probabilidad del 50%
+        if (randomNum > 0.5) {
+          heart.classList.add('red-heart');
+        }
+      });
+    });
+  </script>
+
+{% else %}
+    <br><br><br><br>
+    <h2 class=" text-center titulos">No se encontraron productos</h2>
+
+  {% endif %}
+  <br><br><br>
+{% endblock content %}

@@ -1,0 +1,515 @@
+th {
+  vertical-align: top;
+  background-color:red !important; 
+  border-color: red !important;
+}
+td {
+  vertical-align: top;
+  background-color: #e3d400 !important;
+}
+
+input, textarea, select {
+  background-image: linear-gradient(to right, #f38266, #f38266);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  border-color: #f38266;
+  color: red;
+}
+
+body {
+  background-color: #e3d400;
+  color: red;
+}
+
+.buscar_domicilio{
+  background-image: linear-gradient(to right, #f38266, #f38266 );
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  border-color: rgba(227, 125, 125, 0.5);
+  color: #FFFFFF;
+}
+
+.logo_pequeno {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.nav_anonimo {
+  background-image: linear-gradient(to right, #e3d400);
+  box-shadow: 0 2px 4px #ff0000;
+  border-bottom: 1px solid #ff0000;
+  background-color: #ff0000;
+  color: #FFFFFF;
+}
+
+.boton_buscar_anonimo {
+  background-image: linear-gradient(to right, #e3d400, #e3d400);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  border-color: rgba(227, 125, 125, 0.5);
+  color: #FFFFFF;
+}
+
+.boton_buscar_anonimo_2 {
+  background-image: linear-gradient(to right, #ff0000, #ff0000);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.5);
+  color: #000000;
+  text-align: center;
+}
+.vender {
+  background-image: linear-gradient(to right, #1eef0f, #1eef0f);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.5);
+  color: #000000;
+  text-align: center;
+}
+.despachar {
+  background-image: linear-gradient(to right, #00ffbf, #00ffbf);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.5);
+  color: #000000;
+  text-align: center;
+}
+.entregar {
+  background-image: linear-gradient(to right, #ffaed8, #ffaed8);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.5);
+  color: #000000;
+  text-align: center;
+}
+.boton_carrito {
+  background-image: linear-gradient(to right, #e3d400, #e3d400);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.5);
+  color: #000000;
+  text-align: center;
+}
+
+.btn_eliminar_carrito {
+  background-color: #ff0000;
+  color: #ffffff;
+}
+
+button.btn {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+
+button.btn svg {
+  margin-right: 5px;
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+.index_prod_1 {
+  background-color: #e3d400;
+  background-image: linear-gradient(to right, #e3d400, #e3d400);
+  color: #5d6087;
+  max-width: 250px;
+  margin: auto;
+}
+
+.form-control {
+  max-width: 400px;
+}
+
+.index_disponible {
+  color: green;
+  font-weight: bolder;
+}
+
+.index_precio {
+  color: #000000;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.index_subscrito {
+  color: #e3d400;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.text-primary {
+  color: green;
+  font-weight: bolder;
+}
+
+.index_oferta {
+  color: green;
+  font-weight: bolder;
+}
+
+.letra_blanca {
+  color: #fff;
+}
+
+.index_foto_fondo {
+  background-color: #e3d400;
+  box-shadow: 0 8px 8px rgba(227, 125, 125, 0.5);
+  border-bottom: 8px solid rgba(255, 117, 117, 0.5);
+  color: #ff0000;
+}
+
+.index_btn_comprar {
+  background-image: linear-gradient(to right, #e3d400, #e3d400);
+  box-shadow: 0 2px 4px rgba(255, 105, 180, 0.5);
+  border-color: rgba(255, 105, 180, 0.5);
+  color: #000000;
+}
+
+.admin_btn_django {
+  background-image: linear-gradient(to right, #e3d400, #e3d400);
+  box-shadow: 0 2px 4px rgb(246, 91, 192);
+  border-color: rgba(255, 105, 180, 0.5);
+  color: #ffffff;
+  width: 260px;
+  height: 50px;
+  font-size: 17px;
+}
+
+.titulos {
+  color: #ff0000;
+  font-family: 'Georgia', serif;
+  font-weight: bold;
+}
+
+.titulos_2 {
+  background-image: linear-gradient(to right, #e3d400, #e3d400);
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  color: yellow !important;
+}
+
+.titulo_producto_ficha {
+  font-weight: bolder;
+  font-size: 40px;
+}
+
+.oferta_en_ficha {
+  color: blue;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.precio_oferta_subscrito {
+  font-size: 35px;
+}
+
+.descripcion_ficha {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.foto_ficha {
+  height: 450px;
+  margin-right: 50px;
+  font-weight: bolder;
+}
+
+.borde_nosotros {
+  background-color: #e3d400;
+  border-radius: 15px;
+  border: 3px solid #e3d400;
+}
+
+.boton_correo {
+  background-image: linear-gradient(to right, #e3d400, #e3d400);
+  box-shadow: 0 2px 4px rgba(255, 105, 180, 0.5);
+  border-color: rgba(255, 105, 180, 0.5);
+  color: #FFFFFF;
+}
+
+.registro_color {
+  background-color: #e3d400;
+  background-image: linear-gradient(to right, #e3d400, #e3d400);
+  color: black;
+}
+
+.cuadro_login {
+  border: 10px solid rgba(255, 105, 180, 0.5);
+  padding: 40px;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.boton_ingresar {
+  background-image: linear-gradient(to right, #e3d400, #e3d400);
+  box-shadow: 0 2px 4px rgba(255, 105, 180, 0.5);
+  border-color: rgba(255, 105, 180, 0.5);
+  color: black;
+  width: 200px;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+th.carrito_color_tabla {
+  background-color: #e35300;
+}
+
+.color_footer {
+  color: #ff0000 !important;
+}
+
+.color_ropa {
+  background-color: #e3d400;
+  background-image: linear-gradient(to right, #e3d400, #e3d400);
+  color: white;
+}
+
+.admin_foto {
+  max-width: 450px;
+  margin-left: 200px;
+}
+
+td.ver-detalle {
+  color: blue;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+td.ver-detalle:hover {
+  text-decoration: underline;
+}
+
+.boton_eliminar {
+  background-color: #ff0000;
+  border-color: black;
+  width: 100px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+}
+
+.botones-container button {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.error-text {
+  color: red;
+}
+
+.btn-primary {
+  border: transparent;
+}
+
+.btn-primary:hover {
+  outline: none;
+  border: transparent;
+  background-color: black;
+}
+
+.boton_ver_detalle {
+  background-image: linear-gradient(to right, #e3d400, #e3d400);
+  box-shadow: 0 2px 4px rgba(255, 105, 180, 0.5);
+  border-color: rgba(255, 105, 180, 0.5);
+  color: #000000;
+  text-align: center;
+}
+
+.boton_ropa {
+  background-image: linear-gradient(to right, #e3d400, #e3d400);
+  box-shadow: 0 2px 4px rgba(255, 105, 180, 0.5);
+  border-color: rgba(255, 105, 180, 0.5);
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.form-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  background-color: #e3d400 !important;
+  border: 1px solid #e3d400;
+  border-radius: 5px;
+  transition: all 0.2s;
+}
+
+.form-select:hover,
+.form-select:focus {
+  outline: none;
+  box-shadow: 0 0 10px #e3d400;
+  border-color: black;
+  background-image: linear-gradient(to right, black);
+  box-shadow: 0 2px 4px #e3d400;
+  border-bottom: 1px solid #e3d400;
+  color: black;
+}
+
+.custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: red;
+  border-color: red;
+}
+
+div.mt-2.mb-3.text-center.btn-group {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.table-container {
+  padding: 20px;
+  background-color: #e3d400 !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.table-container th,
+.table-container td {
+  padding: 10px;
+  text-align: left;
+  background-color: #e3d400 !important;
+}
+
+.form-label {
+  color: #ff0000;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+
+.color_footer{
+  color:rgb(255, 39, 39);
+  
+}
+.swal2-popup {
+  background-color: yellow !important;
+}
+.swal2-title,
+.swal2-html-container {
+  color: black !important;
+}
+.swal2-confirm {
+  background-color: red !important;
+  color: white !important;
+}
+.swal2-success {
+  border-color: red !important;
+}
+.swal2-success .swal2-icon-content {
+  color: red !important;
+}
+.swal2-success .swal2-success-ring {
+  border-color: red !important;
+}
+.swal2-success .swal2-success-fix {
+  background-color: yellow !important;
+}
+.swal2-success .swal2-success-circular-line-left,
+.swal2-success .swal2-success-circular-line-right {
+  background-color: yellow !important;
+}
+.swal2-success .swal2-success-line-tip,
+.swal2-success .swal2-success-line-long {
+  background-color: red !important;
+}
+
+
+section {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.carousel-inner {
+  width: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+
+  .container {
+    margin-left: 100px; /* Puedes ajustar el margen según sea necesario */
+}
+.input-group {
+    width: 80%; /* Ajusta el ancho según sea necesario */
+}
+
+.red-heart {
+  color: red !important;
+}
+.page-link{
+  background-color: red !important;
+  border-color:red !important;
+  color: yellow !important;
+}
+ 
+table.table-hover tbody tr.letra-boleta-anulada td {
+  color: red !important;
+}
+table.table-hover tbody tr.letra-boleta-vendida td {
+  color: #029f07 !important;
+}
+table.table-hover tbody tr.letra-boleta-despachada td {
+  color: #00ffbf !important;
+}
+table.table-hover tbody tr.letra-boleta-entregada td {
+  color: #ffaed8!important;
+}
+
+div.col-6 > div.cuadro-amarillo {
+  background-color: #e3d400 !important;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.favorites-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: #e3d400 !important;
+}
+
+.favorite-item {
+  border: 2px solid #e3d400; /* Borde amarillo */
+  padding: 10px;
+  border-radius: 5px;
+  width: calc(33.333% - 20px); /* Tres elementos por fila */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra negra */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.favorite-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #e3d400 !important;
+}
+
+.favorite-item-details h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.favorite-item-details p {
+  margin: 5px 0;
+}
+
+.favorite-item-details .btn {
+  margin-top: 10px;
+}
+.custom-border {
+  border-color: red !important;
+}
